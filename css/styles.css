@@ -27,10 +27,10 @@ a, li, p{
 }
 
 .chevron {
-    margin-left: 8px; /* Space between the text and arrow */
-    width: 1em; /* Set width relative to the font size */
-    height: 1em; /* Set height relative to the font size */
-    vertical-align: middle; /* Aligns the image vertically with the text */
+    margin-left: 8px;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
 }
 
 /* Header */
@@ -71,11 +71,11 @@ li a{
 .chevron {
     margin-left: 0.75rem;
     margin-right: 2.625rem;
-    width: 1rem; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 1rem;
+    height: auto;
 }
 
-/* Body */
+/* Good Food */
 main{
     display: flex;
     flex-direction: column;
@@ -299,21 +299,308 @@ h2{
     text-decoration: underline;
 }
 
+/* Video Blog */
+.video-blog{
+    display: flex;
+    width: 79.56rem;
+    position: relative;
+    align-items: center;
+    margin-bottom: 3.31rem;
+}
+
+.video-blog div{
+    background-color: #404040;
+    z-index: -1;
+    width: 66rem;
+    height: 28.8rem;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    padding-left: 27.1rem;
+    position: relative;
+}
+
+.video-blog h2{
+    color: #f2f2f2;
+    font-size: 5.63rem;
+    z-index: 1;
+}
+
+.big{
+    font-size: 7.81rem;
+    display: block;
+}
+
+.video-blog img{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 25.44rem;
+    height: auto;
+    margin: 0;
+}
+
+.video-blog div :nth-child(2){
+    color: #f2f2f2;
+    font-size: 1rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.5rem;
+    width: 19.2rem;
+    margin-left: 4rem;
+    z-index: 1;
+}
+
+.video-blog .button{
+    background-color: #f2f2f2;
+    color: #404040;
+    margin: 0;
+    margin-left: 4rem;
+    z-index: 1;
+}
+
 /* Footer */
 footer {
     background-color: #3a3a3a;
     height: 15.87rem;
+    display: flex;
+    gap: 8.44rem;
+    padding-top: 3.38rem;
 }
 
+
+.footer-menu{
+    display: flex;
+    gap: 5.44rem;
+    margin-top: 0;
+}
+
+.footer-menu li a{
+    font-size: 1.13rem;
+    font-weight: 700;
+}
+
+.sub-menu-show li a{
+    font-weight: 400;
+}
+
+.sub-menu-show{
+    margin: 0;
+    margin-top: 0.75rem;
+    padding: 0;
+}
+
+.icons svg{
+    fill: #f2f2f2;
+    height: 1.63rem;
+    width: auto;
+}
+
+.icons{
+    display: flex;
+    gap: 0.81rem;
+}
+
+
 /* DESKTOP VIEW */
-@media screen and (max-width: 842px) {
-    main{
-        background-color: blue;
+@media screen and (min-width: 900px) and (max-width: 1450px) {
+        
+    h2, .gray, .green, .big{
+        font-size: 5.63rem;
+        margin: 0;
+        line-height: 5rem;
     }
+/* Good Food */
+
+.good-food{
+    margin-top: 3.06rem;
+    max-width: 51rem;
+}
+.info h2{
+text-align: right;
+width: 18rem;
+}
+
+.gray{
+    text-align: left;
+    font-size: 5.625rem;
+}
+
+
+.images {
+    position: relative;
+    width: 28.88rem;
+    height: 29.5rem;
+}
+
+.images :last-child{
+    width: 23.38rem;
+    height: auto;
+}
+
+/* Local Travel */
+
+.styled{
+    width: 18.13rem;
+    height: 10.25rem;
+}
+
+.green{
+    font-size: 5.63rem;
+    margin-left: 5.25rem;
+}
+
+.btm-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 8.5rem;
+}
+
+.local-travel{
+    margin-top: 3.25rem;
+}
+
+.gray-bar{
+    height: 21.56rem;
+}
+
+.content, .local-travel img{
+    width: 17.44rem;
+    height: auto;
+    transform: translateX(0rem);
+}
+
+.local-travel img{
+    transform: translateY(5.25rem);
+}
+
+
+.content .button{
+    margin-top: 1.75rem;
+   margin-left: auto;
+}
+
+/* Stuff */
+
+.stuff{
+    width: 50.19rem;
+    margin-top: 10rem;
+}
+
+.box{
+    width: 24.31rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container{
+    width: 50.19rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.gray-box{
+    width: 24.31rem;
+    height: 38.13rem;
+}
+
+.gray-box img{
+    width: 22.19rem;
+    height: 33.31rem;
+}
+
+.heart-box h2{
+    font-size: 5.63rem;
+}
+
+.heart-box {
+    width: 19.7rem;
+    margin-left: 5.25rem;
+}
+
+.heart{
+    width: 2.75em;
+    height: auto;
+    top: -0.8em;
+    left: -0.6em;
+}
+
+/* Video Blog */
+.video-blog{
+    width: 50.19rem;
+}
+
+.video-blog div{
+    width: 38rem;
+    height: auto;
+    padding-left: 4rem;
+}
+
+.video-blog img{
+    width: 22.19rem;
+    height: auto;
+}
+
+.video-blog div :nth-child(2){
+
+    margin-top: 1.31rem;
+    margin-bottom: 1.44rem;
+    width: 14.5rem;
+}
+
 }
 
 @media screen and (max-width: 320px) {
     main{
         background-color: yellow;
     }
+
+    .container{
+        max-width: 320px;
+        justify-content: center;
+    }
+
+/* Header */
+
+/* Good Food */
+
+h2, .gray, .green, .big{
+    font-size: 5.63rem;
+    margin: 0;
+    line-height: 5rem;
+    }
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.info p{
+    width: 18.44rem;
+}
+
+    .info h2{
+        width: 15.69rem;
+    }
+
+
+.good-food{
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Local Travel */
+
+/* Stuff */
+
+/* Video Blog */
+
+/* Footer */
+
 }
