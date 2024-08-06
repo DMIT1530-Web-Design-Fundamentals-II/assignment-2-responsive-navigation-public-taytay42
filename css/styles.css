@@ -12,8 +12,6 @@ main {
     align-items: center;
 }
 
-/* Text */
-
 h1,
 h2,
 h3 {
@@ -30,11 +28,33 @@ p {
     list-style: none;
 }
 
-.chevron {
+.toggle-btn svg {
     margin-left: 8px;
     width: 1em;
     height: 1em;
     vertical-align: middle;
+}
+
+/* Nav */
+.nav-menu li{
+    position: relative;
+}
+
+.toggle-btn{
+    z-index: 6;
+}
+.sub-menu {
+    display: none;
+    background-color: #3a3a3a;
+    z-index: 5;
+    position: absolute;
+    width: 8.44rem;
+    text-align: left;
+}
+
+.sub-menu.show-nav {
+    display: block;
+    max-height: 500px;
 }
 
 /* Header */
@@ -52,15 +72,17 @@ h1 {
     margin-left: 2.56rem;
 }
 
-
-.sub-menu {
-    display: none;
-}
-
 .nav-menu {
     display: flex;
 }
 
+.nav-menu li{
+    margin-right: 2rem;
+}
+
+.nav-menu li :last-child{
+    margin-right: 0;
+}
 
 li a {
     color: #f2f2f2;
@@ -111,7 +133,6 @@ h2 {
 .info {
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin-right: 2.5rem;
 }
 
